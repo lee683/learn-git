@@ -148,3 +148,21 @@ git push -u origin newBranch
 ### push报错
 
 [git报错：error: failed to push some refs to ... 的解决办法及如何让线上覆盖本地方法【Git/SVN】_@Umbrella的博客-CSDN博客](https://blog.csdn.net/Umbrella_Um/article/details/109855178)
+
+# 总结
+
+1  与远程库建立联系有两种方式
+
+①github创建repositories -> 本地工作区git init -> git remote add建立二者联系。
+
+②github创建repositories -> 本地工作区git clone远程仓库
+
+注：第②种较为常用。
+
+2  建立分支的两种方式
+
+①本地git branch后push到远程，远程自动创建本地新建的branch
+
+②在远程新建branch，本地git pull拉取最新分支，可切换新建的branch
+
+注：第②种git pull后，本地执行git branch是不会显示pull下来的新分支，需要手动checkout过去后才能显示。
